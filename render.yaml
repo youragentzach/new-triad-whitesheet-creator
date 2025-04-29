@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: new-triad-whitesheet-creator
+    env: python
+    runtime: python3
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app --bind 0.0.0.0:$PORT --workers=1 --threads=2 --timeout=300 --max-requests=1000 --max-requests-jitter=50
+    envVars:
+      - key: GOOGLE_API_KEY
+        sync: false
+      - key: PYTHON_VERSION
+        value: 3.10.13  # Use Python 3.10 for best compatibility
+      # - key: NGINX_CONF_PATH
+      #   value: ./nginx.conf  # Uncomment if you have a custom nginx.conf (not needed for Flask/gunicorn)
+      # Set GOOGLE_API_KEY in the Render dashboard under Environment Variables
+    plan: free
+    autoDeploy: true

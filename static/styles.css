@@ -1,0 +1,95 @@
+/* Triad Mechanical Branding - Gemini File Extractor */
+body {
+    background: #23272b; /* dark background for contrast */
+    color: #f7f7f7;
+    font-family: 'Segoe UI', 'Arial', sans-serif;
+}
+
+.app-header {
+    background: #0a1f35; /* Triad blue */
+    padding: 1.5rem 0 1rem 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo {
+    max-width: 260px;
+    height: auto;
+    margin-bottom: 0.2rem;
+    filter: drop-shadow(0 2px 12px rgba(0,0,0,0.25));
+}
+.app-title {
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+    font-size: 2.2rem;
+    margin-bottom: 0.25rem;
+    letter-spacing: 0.02em;
+}
+.subtitle {
+    color: #e9b949; /* Triad gold accent */
+    font-size: 1.1rem;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+}
+.upload-card, .history-card {
+    background: #1b1f23;
+    border-radius: 1.1rem;
+    border: none;
+    box-shadow: 0 2px 12px rgba(10,31,53,0.08);
+}
+.section-title {
+    color: #0a1f35;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+.section-description {
+    color: #bfc9d1;
+    margin-bottom: 1.2rem;
+}
+.input-group .form-control {
+    background: #23272b;
+    color: #f7f7f7;
+    border: 1px solid #0a1f35;
+}
+.input-group .btn-primary {
+    background: #0a1f35;
+    border: none;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+}
+.input-group .btn-primary:hover {
+    background: #e9b949;
+    color: #0a1f35;
+}
+.file-types, .file-size-limit {
+    color: #bfc9d1;
+    font-size: 0.96rem;
+    margin-top: 0.3rem;
+}
+.alert-info {
+    background: #e9b949;
+    color: #23272b;
+    font-weight: 600;
+}
+.alert-danger {
+    background: #e74c3c;
+    color: #fff;
+}
+#history-list {
+    margin-top: 0.8rem;
+}
+#clear-history-btn {
+    border-color: #e9b949;
+    color: #e9b949;
+}
+#clear-history-btn:hover {
+    background: #e9b949;
+    color: #0a1f35;
+}
+.card {
+    box-shadow: 0 2px 12px rgba(10,31,53,0.08);
+}
